@@ -1,0 +1,163 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.header-menu {
+    font-size: 1.2em;
+    color: red;
+}
+
+.header-secondary-cabeçalho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    color: white;
+}
+
+.menu-list-social-medias {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-list-social-medias li {
+    padding: 0px;
+    margin-right: 1.5em;
+    font-size: 2em;
+    padding: 20px;
+}
+
+.menu-list-social-medias li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-list-social-medias li a:hover {
+    text-decoration: none;
+    transition-duration: 0.8s;
+    color: red;
+}
+
+.title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-section h2 {
+    text-align: center;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+
+.titulos-principais {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow:9px 7px 5px grey;
+}
+
+.title {
+    text-align: center;
+}
+
+.escritores-sections {
+    margin-top: 3em;
+}
+
+.escritores-sections h2 {
+    margin-bottom: 1.5em;
+}
+
+.card-autores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* PÁGINA LIVROS */
+
+.title-livros {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .card-livros {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} */
+
+.page-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sobre h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.sobre {
+    font-weight: bold;
+}
+
+.obras {
+    margin-bottom: 3em;
+}
+
+.obras h3 {
+    text-align: center;
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: 2.3s
+}
+
+[data-photo] {
+    opacity: 0;
+    transition: 1s
+}
+
+[data-photo="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-photo].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px)
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px)
+}
